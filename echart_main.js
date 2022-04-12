@@ -50,7 +50,10 @@ if(!this._myDataSource||this._myDataSource.state!=='success'){
 
       const myChart = echarts.init(this._root, 'wight')
 
-      const option={tooltip:{trigger:'item'},legend:{top:'2%',left:'center'},
+      const option={
+        tooltip:{
+          trigger:'item'},
+          legend:{top:'2%',left:'center'},
                series:[
                  {
                    name:'',type:'pie',radius:['40%','65%'],
